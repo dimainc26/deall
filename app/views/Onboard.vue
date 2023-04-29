@@ -27,7 +27,7 @@
       </GridLayout>
 
       <StackLayout row="2" class="bottom-btn" orientation="vertical">
-        <Button text="Sign Up" class="large-btn" />
+        <Button text="Sign Up" class="large-btn" @tap="register" />
         <Button text="Login" class="large-btn login" />
       </StackLayout>
     </GridLayout>

@@ -1,3 +1,4 @@
+import Register from '../views/Register';
 
 
 export default {
@@ -12,7 +13,9 @@ export default {
         }
     },
     methods: {
-
+        register (){
+            this.$navigateTo(Register);
+        }
     },
     computed: {
         hasItems() {
