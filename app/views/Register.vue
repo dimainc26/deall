@@ -1,6 +1,6 @@
 <template>
   <Page actionBarHidden="true">
-    <AbsoluteLayout class="reg-container" backgroundColor="#151651" >
+    <AbsoluteLayout class="reg-container" background="linear-gradient(to right, #2427a5, #151651)"  >
         <Label text="<" class="tiny-btn" />
         <Label text="Become the V.I.P candidate" class="title reg" />
         <Label text="Exclusive career portal for African's top talent" class="reg-desc" textWrap="true" />
@@ -19,20 +19,20 @@
                 </AbsoluteLayout>
 
                 <AbsoluteLayout class="field">
-                    <Label text.decode="&#xf102;" class="secure" />
+                    <Label text.decode="&#xf070;" class="fas secure" />
                     <TextField returnKeyType="next" secure="true" hint="********" class="input" />
                     <Label text="Password" class="label"/>
                 </AbsoluteLayout>
 
                 <AbsoluteLayout class="field">
-                    <Label text.decode="&#xf102;" class="secure" />
+                    <Label text.decode="&#xf070;" class="fas secure" />
                     <TextField returnKeyType="go" secure="true" hint="********" class="input" />
                     <Label text="Confirn Password" class="label"/>
                 </AbsoluteLayout>
 
             </FlexboxLayout>
             <StackLayout row="1" class="reg-btn" orientation="vertical">
-                <Button class="large-btn" text="Next" />
+                <Button class="large-btn" text="Next" @tap="welcome" />
                 <Label class="exist">
                     <FormattedString>
                         <Span text="Already have an account? "/>

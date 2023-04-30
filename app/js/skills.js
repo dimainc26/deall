@@ -1,5 +1,4 @@
 
-import Welcome from '../views/Welcome';
 
 export default {
 
@@ -9,8 +8,8 @@ export default {
         }
     },
     methods: {
-         welcome(){
-            this.$navigateTo(Welcome, {clearHistory: true});
+        skills(){
+            this.$navigateTo(Skills);
         }
     },
     computed: {

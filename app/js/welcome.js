@@ -1,5 +1,5 @@
 
-import Welcome from '../views/Welcome';
+import Skills from '../views/Skills';
 
 export default {
 
@@ -9,8 +9,8 @@ export default {
         }
     },
     methods: {
-         welcome(){
-            this.$navigateTo(Welcome, {clearHistory: true});
+        skills(){
+            this.$navigateTo(Skills);
         }
     },
     computed: {

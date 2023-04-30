@@ -1,6 +1,8 @@
 import Vue from 'nativescript-vue'
 
-import Onboard from './views/Onboard'
+// import Onboard from './views/Onboard'
+
+import Onboard from './views/Skills'
 
 import Home from './components/Home'
 import { ApplicationSettings } from '@nativescript/core';
