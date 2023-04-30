@@ -4,6 +4,12 @@
     ---primary: #1E2252;
 }
 
+Page {
+    background-color: #eeeeee;
+}
+
+
+
 .top-bar {
     flex-direction: row;
     justify-content: space-between;
@@ -239,6 +245,7 @@
     border-radius: 12;
     margin: 4 12;
     padding: 2;
+    height: 16%;
 }
 
 .m10 {
@@ -281,7 +288,7 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 10%;
+    margin-top: 4%;
     margin-bottom: 4;
 }
 
@@ -293,4 +300,168 @@
 .down {
     color: #6b6b6b;
     background-color: white;
+}
+
+.opp {
+    border-radius: 12;
+    border-color: #6b6b6b;
+    border-width: 1;
+    padding: 6 20;
+    margin: 6 12;
+    height: 95;
+}
+
+.opp-txt {
+    font-size: 18;
+    margin-left: 8;
+}
+
+.opp-icon {
+    color: #6b6b6b;
+    font-size: 24;
+    margin: 4 6;
+}
+
+.opp-title {
+    font-weight: bold;
+    color: #6b6b6b;
+    
+}
+
+.opp-desc {
+    font-weight: 600;
+    font-size: 15;
+    color: #a3a3a3;
+
+}
+
+// Skills search page
+
+.skill-search {
+}
+
+.search-field {
+    width: 80%;
+    color: black;
+}
+
+.mini {
+    width: 10%;
+    text-align: center;
+    color: #6b6b6b;
+}
+
+.sug {
+    color: #6b6b6b;
+    font-weight: 800;
+    padding: 0 8;
+    margin:  4 0;
+}
+
+.skills-box {
+
+}
+
+.comp {
+    border-radius: 8;
+    background-color: rgb(192, 253, 195);
+    height: 40;
+    margin: 6 12;
+}
+.comp-black {
+    border-radius: 8;
+    background-color: white;
+    height: 40;
+    margin: 6 12;
+}
+
+.comp Label {
+    color: green;
+}
+.comp-black Label {
+    color: #6b6b6b;
+}
+
+.comp-txt {
+    font-size: 14;
+    font-weight: 700;
+    padding-left: 10;
+    color: rgb(15, 43, 15);
+}
+
+// CV page
+
+.cv-txt {
+    color: #6b6b6b;
+    margin: 18 12;
+}
+
+.cvdesc {
+    color: #6b6b6b;
+    margin: 8 14;
+    font-size: 16;
+}
+
+.medium-title {
+    color: #151651;
+    font-weight: bold;
+    font-size: 16;
+    margin: 8 18;
+}
+
+.cv-btn {
+    background-color: white;
+    color: #6b6b6b;
+    border-radius: 8;
+    margin: 8 18;
+    padding: 0;
+}
+
+.cv-txt {
+    margin-left: 8;
+    width: 60%;
+}
+
+.cv-btn {
+
+}
+
+.cv-info {
+
+}
+
+.cv-link {
+    background-color: #eeeeee;
+    margin: 6 20;
+    border-radius: 8;
+}
+
+.link-txt {
+    width: 20%;
+    background-color: #F7DA73;
+    height: 45;
+    border-top-left-radius: 8;
+    border-bottom-left-radius: 8;
+    text-align: center;
+    padding: 12 6;
+}
+
+.link-input {
+    margin-left: 22%;
+    width: 70%;
+}
+
+.icon-btn {
+    background-color: #eeeeee;
+    border-radius: 8;
+    color: #151651;
+    width: 50%;
+    margin: 8;
+    margin-right: 46%;
+    padding: 0;
+    height: 35;
+}
+
+.long {
+    padding-bottom: 8;
 }

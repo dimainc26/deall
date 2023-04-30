@@ -10,7 +10,7 @@ import { ApplicationSettings } from '@nativescript/core';
 Vue.registerElement('Carousel', () => require('@nstudio/nativescript-carousel').Carousel);
 Vue.registerElement('CarouselItem', () => require('@nstudio/nativescript-carousel').CarouselItem);
 
-Vue.config.silent = false;
+Vue.config.silent = true;
 
 new Vue({
   render: (h) => h('frame', [h(ApplicationSettings.hasKey("first")? Home: Onboard)]),
