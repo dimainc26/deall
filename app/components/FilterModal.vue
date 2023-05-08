@@ -1,6 +1,6 @@
 <template>
-  <Page actionBarHidden="true">
-    <StackLayout class="modal-container">
+  <Page actionBarHidden="true"  >
+    <StackLayout class="modal-container" >
       <FlexboxLayout class="modal-top">
         <Label text="Filter" class="modal-title" />
         <Label text="Reset" class="modal-cmd" />
@@ -9,7 +9,7 @@
         <Label text="Sort By" class="modal-txt" />
         <DropDown
           @selectedIndexChanged="unityChanged"
-          class="drop-down"
+          class="modal-dropdown"
           :items="sortList"
           selectedIndex="0"
         />
@@ -93,7 +93,7 @@
       </StackLayout>
 
       <StackLayout class="filter-forms">
-        <FlexboxLayout class="">
+        <FlexboxLayout class="modal-more" >
           <Label text="Benefits" class="modal-txt" />
           <Label text="See More" class="modal-cmd" />
         </FlexboxLayout>
@@ -126,7 +126,7 @@
       </StackLayout>
 
       <StackLayout class="filter-forms">
-        <FlexboxLayout class="">
+        <FlexboxLayout class="modal-more">
           <Label text="City" class="modal-txt" />
           <Label text="See More" class="modal-cmd" />
         </FlexboxLayout>
@@ -156,11 +156,21 @@
 
       <StackLayout class="filter-forms">
         <Label text="Salary" class="modal-txt" />
-        <FlexboxLayout class="">
+        <FlexboxLayout class="modal-more" >
           <Label text="Min. 0$ " class="modal-txt" />
           <Label text="Max. 99 999$ " class="modal-cmd" />
         </FlexboxLayout>
+
+        <Slider ref="modal-slider" value="10" minValue="0" maxValue="100" class="modal-slider"  />
+        
+
+        <StackLayout orientation="horizontal">
+          <CheckBox :checked="isChecked" @checkedChange="isChecked = $event.value" />
+          <Label text="Include Negotiable Salary" />
+        </StackLayout>
       </StackLayout>
+
+      <Button @tap="saveFilter" class="large-btn" height="50" text="Apply Filter" />
 
 
     </StackLayout>

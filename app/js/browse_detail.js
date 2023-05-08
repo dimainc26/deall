@@ -1,5 +1,7 @@
 import ForYou from "../components/ForYou"
+import SaveFilter from "../components/SaveFilters"
 import FilterModal from "../components/FilterModal"
+import BottomSheetPlugin from "@nativescript-community/ui-material-bottomsheet/vue"
 
 
 export default {
@@ -15,14 +17,15 @@ export default {
     methods: {
         filterModal() {
             this.$showBottomSheet(FilterModal, {
-                props: {
-                    someProp: true,
-                    anotherProp: false
-                },
-                // listeners to be connected to MyComponent
-                on: {
-                    someEvent: (value) => { console.log(value) }
+                closeCallback: ()=>{
+                    this.$showBottomSheet(SaveFilter, {
+                        closeCallback: ()=>{
+                            
+                        }
+                       
+                    });
                 }
+               
             });
         }
     },

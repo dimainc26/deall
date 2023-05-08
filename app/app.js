@@ -15,11 +15,16 @@ import BottomSheetPlugin from '@nativescript-community/ui-material-bottomsheet/v
 import { install } from "@nativescript-community/ui-material-bottomsheet";
 install();
 
+import { CheckBox } from '@nstudio/nativescript-checkbox';
+
+
 
 Vue.use(BottomSheetPlugin);
 
 
 Vue.registerElement("DropDown", () => require("nativescript-drop-down/drop-down").DropDown)
+Vue.registerElement('CheckBox', () => CheckBox, { model: { prop: 'checked', event: 'checkedChange' } });
+
 Vue.registerElement('Carousel', () => require('@nstudio/nativescript-carousel').Carousel);
 Vue.registerElement('CarouselItem', () => require('@nstudio/nativescript-carousel').CarouselItem);
 Vue.registerElement('Fab', () => require('@nstudio/nativescript-floatingactionbutton').Fab);

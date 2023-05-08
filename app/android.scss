@@ -858,8 +858,80 @@ Component for you
   width: 100%;
 }
 
+.modal-top {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 12;
+  padding: 8 12;
+}
 
 
+.modal-title {
+  font-weight: bold;
+  color: #151651;
+  font-size: 20;
+}
+.modal-cmd {
+  font-weight: bold;
+  color: #2427a5;
+  font-size: 16;
+}
+
+.modal-txt {
+  color: black;
+  font-size: 14;
+  font-weight: 600;
+  margin: 6 4;
+}
+
+.modal-text {
+  color: black;
+  font-size: 14;
+  font-weight: 600;
+  margin: 2 4;
+}
+
+.modal-desc {
+  margin: auto 4;
+}
+
+.filter-forms {
+  margin: 3 14;
+}
+
+.modal-more {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-dropdown {
+  background-color: white;
+    height: 35;
+    border-radius: 12;
+    border-width: 1;
+    border-color: #a3a3a3;
+    font-size: 16;
+    font-weight: 700;
+    padding: 6 8;
+}
+
+.modal-slider {
+  background-color: #6b6b6b;
+  color: #151651;
+  height: 20;
+}
+
+.modal-save {
+  width: 85%;
+}
+
+.modal-checks {
+  margin: 12 8;
+  padding: 4 2;
+  border-width: 2;
+  border-color: #151651;
+  border-radius: 8;
+}
 
 /*
 

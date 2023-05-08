@@ -1,4 +1,6 @@
 import ForYou from "../components/ForYou"
+import SaveFilter from "../components/SaveFilters"
+
 
 export default {
 
@@ -6,17 +8,29 @@ export default {
         ForYou,
     },
 
-    data(){
+    data() {
         return {
-            sortList: ["Most Relevant", "Near distance", "Best Price" ,"All" ],
-            
+            sortList: ["Most Relevant", "Near distance", "Best Price", "All"],
+
         }
     },
     methods: {
+        saveFilter(){
+            this.$showBottomSheet(SaveFilter, {
+                props: {
+                    someProp: true,
+                    anotherProp: false
+                },
+                // listeners to be connected to MyComponent
+                on: {
+                    someEvent: (value) => { console.log(value) }
+                }
+            });
+        }
     },
-    computed: {
-       
-      },
+    mounted() {
+    },
+
     watch: {
         async onboardData(to) {
             await this.$nextTick()
