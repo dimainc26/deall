@@ -45,7 +45,7 @@
   </Page>
 </template>
 
-<script src="../js/register.js">
+<script src="../js/home.js">
 
 </script>
 

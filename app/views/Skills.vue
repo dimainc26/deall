@@ -52,45 +52,51 @@
               <Label text.decode="&#xf00d;" class="fas close" />
             </AbsoluteLayout>
 
-            <FlexboxLayout class="fields" height="90%">
-              <AbsoluteLayout class="field">
+            <FlexboxLayout class="fields" height="100%">
+              <AbsoluteLayout class="field large">
                 <TextField
                   returnKeyType="next"
                   hint="Zanre Mahamadi"
-                  class="input"
+                  class="input ml"
                 />
-                <Label text="Full Name" class="label" />
+                <Label text="Full Name" class="label bas" />
+                <Label text.decode="&#xf10b;" class="field-icon fas" />
               </AbsoluteLayout>
 
-              <AbsoluteLayout class="field">
+              <AbsoluteLayout class="field large">
                 <TextField
                   returnKeyType="next"
                   hint="+226 00 00 00 00"
-                  class="input"
+                  class="input ml"
                 />
-                <Label text="Whatsapp Number" class="label" />
+                <Label text.decode="&#xf095;" class="field-icon fa fas" />
+                <Label text="Whatsapp Number" class="label bas" />
               </AbsoluteLayout>
 
-              <AbsoluteLayout class="field">
-                <Label text.decode="&#xf070;" class="fas secure" />
-                <TextField returnKeyType="next" hint="********" class="input" />
-                <Label text="Most Recent Role & Company" class="label" />
+              <AbsoluteLayout class="field large">
+                <TextField
+                  returnKeyType="next"
+                  hint="Designer"
+                  class="input ml"
+                />
+                <Label text.decode="&#xf19c;" class="field-icon fas" />
+                <Label text="Most Recent Role & Company" class="label bas" />
               </AbsoluteLayout>
 
-              <AbsoluteLayout class="field">
-                <Label text.decode="&#xf070;" class="fas secure" />
+              <AbsoluteLayout class="field large">
                 <TextField
                   returnKeyType="next"
                   hint="Licence 3 2018"
-                  class="input"
+                  class="input ml"
                 />
-                <Label text="Bachelor Degree Entry Year" class="label" />
+                <Label text.decode="&#xf070;" class="field-icon fas" />
+                <Label text="Bachelor Degree Entry Year" class="label bas" />
               </AbsoluteLayout>
 
-              <AbsoluteLayout class="field">
-                <Label text.decode="&#xf070;" class="fas secure" />
-                <TextField returnKeyType="go" hint="1 800 $" class="input" />
-                <Label text="Minimum Salary Entry" class="label" />
+              <AbsoluteLayout class="field large">
+                <TextField returnKeyType="go" hint="1 800 $" class="input ml" />
+                <Label text.decode="&#xf0d6;" class="field-icon fas" />
+                <Label text="Minimum Salary Entry" class="label bas" />
               </AbsoluteLayout>
             </FlexboxLayout>
           </CarouselItem>
